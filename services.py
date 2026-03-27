@@ -110,8 +110,9 @@ def calcular_estadisticas(inventario):
             if p["cantidad"] > mayor_stock["cantidad"]:
                 mayor_stock = p
 
-        print("\n--- STATISTICS ---")
+        print("\n------------- STATISTICS -------------")
         print("Total units:", unidades_totales)
         print("Total value:", valor_total)
         print("Most expensive product:", mas_caro["nombre"], "-", mas_caro["precio"])
         print("Highest stock product:", mayor_stock["nombre"], "-", mayor_stock["cantidad"])
+        print("-----------------------------------------")

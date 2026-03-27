@@ -73,7 +73,7 @@ while salir == False:
         ruta = input("File path: ")
         nuevos = cargar_csv(ruta)
 
-        decision = input("Overwrite current inventory? (S/N): ")
+        decision = input("Overwrite current inventory? (S/N): ").lower()
 
         if decision == "S":
             inventario = nuevos
@@ -90,7 +90,7 @@ while salir == False:
                 else:
                     inventario.append(nuevo)
 
-            print("Inventory merged.")
+            print("_____________________________________")
 
     # Exit program
     elif opcion == "9":

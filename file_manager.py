@@ -44,7 +44,6 @@ def cargar_csv(ruta):
         list: list of valid products
     """
     productos = []
-    errores = 0
 
     try:
         archivo = open(ruta, "r", encoding="utf-8")
@@ -74,13 +73,10 @@ def cargar_csv(ruta):
                             }
                             productos.append(producto)
                         else:
-                            errores = errores + 1
-
+                            print("error")
                     except:
-                        # Conversion error
-                        errores = errores + 1
-                else:
-                    errores = errores + 1
+                        print("error")
+
 
         archivo.close()
 
